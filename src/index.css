@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-1: #ffffff;
+  --color-2: #752daf;
+  --color-3: #1a3d47;
+  --color-4: #142731;
+  --color-5: #1b1a1b;
+}
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #1b1a1b;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-weight: 100;
+}
+.japanese {
+  writing-mode: vertical-rl;
+  white-space: pre-wrap;
+}
