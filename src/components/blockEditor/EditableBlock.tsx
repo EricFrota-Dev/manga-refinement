@@ -1,11 +1,12 @@
 import { Rnd } from "react-rnd";
 import BlockMenu from "./BlockMenu";
-import type { Block } from "../../types/Block";
+import type { Block } from "../../types/Manga";
 
 interface Props {
   block: Block;
   index: number;
   shiftPressed: boolean;
+  cPressed: boolean;
   draggingIndex: number | null;
   hoveredIndex: number | null;
   setDraggingIndex: (i: number | null) => void;
@@ -21,6 +22,7 @@ const EditableBlock = ({
   block,
   index,
   shiftPressed,
+  // cPressed,
   draggingIndex,
   hoveredIndex,
   setDraggingIndex,

@@ -1,4 +1,4 @@
-import type { Block } from "../types/Block";
+import type { Block } from "../types/Manga";
 
 export function mergeBlocks(parent: Block, child: Block): Block {
   const newX = Math.min(parent.positionX, child.positionX);

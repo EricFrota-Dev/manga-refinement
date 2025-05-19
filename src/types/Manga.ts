@@ -4,25 +4,27 @@ export type Block = {
   positionY: number;
   width: number;
   height: number;
+  isElipse: boolean;
+  backgroun_color: string;
+  border_color: string;
+  text_color: string | null;
+  text_size: number;
+  extra_styles: string | null;
 };
 export type Page = {
-  image_info: img_info;
-  blocks: Block[];
   page_number: number;
-};
-
-export type img_info = {
-  url: string;
-  width: number;
-  height: number;
+  img_url: string;
+  page_height: number;
+  page_width: number;
+  blocks: Block[];
 };
 
 export type Manga = {
+  id: number;
   title: string;
   pages_length: number;
   artists: string[];
   tags: string[];
   parodies: string[];
-  imgs_info: img_info[];
-  pages: Page[];
+  isRevised: boolean;
 };
